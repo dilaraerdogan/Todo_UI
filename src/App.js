@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from "./Main";
+import Modal from "./Modal";
+import Navi from "./Navi";
+import ForgotModel from "./ForgotModel";
+import "./Style.css";
+import React, { Component } from "react";
+import Register from "./Register";
+import Login from "./Login";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    let naviData = { title: "To-Do List" };
+    return (
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route
+            path="/todo"
+            element={
+              <>
+                <Navi info={naviData}></Navi>
+                <Main {...this.props} />
+                <Modal />
+              </>
+            }
+          />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgotpassword" element={<ForgotModel />}></Route>
+          <Route element={<Login />} />
+        </Routes>
+      </div>
+    );
+  }
 }
-
-export default App;

@@ -1,0 +1,263 @@
+body {
+  text-decoration: none;
+  background-color: #e0e0e0 !important;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body header .header-div {
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+body header .header-div .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+body header .header-div .create-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+body header .header-div .create-search button {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+body header .header-div .create-search button:hover {
+  cursor: pointer;
+}
+
+body header .header-div .create-search div input {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+body header .header-div .create-search div input:focus {
+  outline: none;
+}
+
+body header .header-div .create-search div .search {
+  color: white;
+  border: 1px solid #333;
+  border-radius: 30%;
+  background-color: #333;
+  padding: 3px 7px;
+}
+
+body section .navbar-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+body section .navbar-div .nav-item {
+  color: #333;
+}
+
+body section .navbar-div .nav-item.my-active {
+  color: white;
+  font-weight: bold;
+  background-color: #333;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+body section .all-todo {
+  margin-top: 30px;
+}
+
+body section .all-todo .todo-title {
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+body section .all-todo .todo-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px dotted #aaaa;
+  border-bottom: 1px dotted #aaa;
+  padding: 10px;
+}
+
+body section .all-todo .todo-item .done {
+  text-align: center;
+  background-color: #019267;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+body section .all-todo .todo-item .in-progress {
+  text-align: center;
+  background-color: #fede00;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+body section .all-todo .todo-item .to-do {
+  text-align: center;
+  background-color: #398ab9;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+body section .all-todo .todo-item .content .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+body section .all-todo .todo-item .content .description {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+body section .all-todo .todo-item .category {
+  text-align: start;
+}
+
+body section .all-todo .todo-item .category i {
+  background-color: #363636;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+body section .all-todo .todo-item .timeline {
+  color: #363636;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+body section .all-todo .todo-item .btn .update {
+  color: white;
+  background-color: #6d8299;
+  opacity: 0.6;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+body section .all-todo .todo-item .btn .delete {
+  color: white;
+  background-color: #da1212;
+  opacity: 0.8;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+body section .all-todo .todo-item.odd {
+  background-color: #eee;
+}
+
+body section .form-row #div-container:hover {
+  box-shadow: 5px 10px #888888;
+  border-radius: 3px;
+  border: none;
+}
+
+body .modal .modal-header {
+  background-color: #333;
+  color: white;
+}
+
+body .modal .modal-body .form-group {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+body .modal .modal-body .form-group label {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+body .modal .modal-body #category .item {
+  font-size: 15px;
+}
+
+.register .design {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 20px 20px 25px grey;
+}
+.register img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.register .register-btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+.register .register-btn:hover {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  color: black;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.671);
+}
+.register .my-font {
+  font-family: "Georgia", sans-serif;
+}
+.register .register-input:focus {
+  border-color: rgba(0, 0, 0, 0.671);
+  opacity: 70%;
+  box-shadow: #333 30px;
+}
